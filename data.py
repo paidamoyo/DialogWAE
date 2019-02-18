@@ -105,7 +105,7 @@ class SWDACorpus(object):
     def load_word2vec(self, word_vec_path):
         if word_vec_path is None:
             return None
-        with open(word_vec_path, "r") as f:
+        with open(word_vec_path, "r", errors='ignore') as f:
             lines = f.readlines()
         raw_word2vec = {}
         for l in lines:
