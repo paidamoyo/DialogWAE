@@ -97,8 +97,8 @@ def indexes2sent(indexes, vocab, eos_tok, ignore_tok=0):
 import torch
 from torch.nn import functional as F
 
-# use_cuda = torch.cuda.is_available()
-use_cuda = False
+use_cuda = torch.cuda.is_available()
+# use_cuda = False
 
 
 def gData(data):
