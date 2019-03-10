@@ -50,7 +50,7 @@ from tensorboardX import SummaryWriter # install tensorboardX (pip install tenso
 parser = argparse.ArgumentParser(description='DialogWAE Pytorch')
 # Path Arguments
 parser.add_argument('--data_path', type=str, default='./data/', help='location of the data corpus')
-parser.add_argument('--dataset', type=str, default='SWDA', help='name of dataset. SWDA or DailyDial')
+parser.add_argument('--dataset', type=str, default='DailyDial', help='name of dataset. SWDA or DailyDial')
 # parser.add_argument('--model', type=str, default='DialogWAE_GMP', help='model name')
 parser.add_argument('--model', type=str, default='DialogWAE', help='model name')
 parser.add_argument('--expname', type=str, default='basic', help='experiment name, for disinguishing different parameter settings')
